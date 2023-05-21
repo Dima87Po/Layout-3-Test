@@ -1,0 +1,145 @@
+.container {
+  position: relative;
+  background: #ffffff;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  color: #000000;
+  line-height: 46px;
+  margin-top: 18px;
+  font-family: "Lato-Semibold", sans-serif;
+  font-weight: 600;
+}
+
+a:visited {
+  color: green;
+}
+
+%tmplUnderline {
+  content: "";
+  position: absolute;
+  left: 35px;
+  bottom: -2px;
+  width: 112px;
+  height: 13px;
+  opacity: 0.3;
+}
+
+%btnForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px dashed #9747ff;
+  border-radius: 5px;
+  margin: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .buttons__red,
+  .buttons__green,
+  .buttons__big-red,
+  .buttons__big {
+    @extend %btnForm;
+  }
+
+  button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Lato-Bold", sans-serif;
+    position: relative;
+    letter-spacing: 2px;
+  }
+
+  button:hover {
+    text-decoration: underline;
+    text-decoration-color: #9747ff;
+  }
+
+  button::after {
+    @extend %tmplUnderline;
+  }
+
+  .buttons__red,
+  .buttons__green,
+  .buttons__big-red,
+  .buttons__big {
+    width: 162px;
+    height: 108px;
+    margin: 25px;
+
+    .one {
+      color: #f1897b;
+    }
+
+    .one::after {
+      background-color: #f1897b;
+    }
+
+    .two {
+      color: #e54f3a;
+    }
+
+    .two::after {
+      background-color: #e54f3a;
+    }
+
+    .three {
+      color: #53f3cd;
+    }
+
+    .three::after {
+      background-color: #53f3cd;
+    }
+
+    .four {
+      color: #02e0ab;
+    }
+
+    .four::after {
+      background-color: #02e0ab;
+    }
+  }
+
+  .buttons__big-red,
+  .buttons__big {
+    width: 340px;
+    height: 240px;
+
+    button {
+      //   border: 1px solid #e4e4e4;
+      width: 300px;
+      height: 90px;
+      margin: 20px;
+    }
+
+    .one {
+      border: 1px dashed #9747ff;
+    }
+    .two {
+      border: 1px solid #e54f3a;
+    }
+    .three {
+      border: 1px solid #515773;
+    }
+    .four {
+      border: 1px solid #02e0ab;
+    }
+
+    button::after {
+      left: 105px;
+      bottom: 25px;
+    }
+  }
+}

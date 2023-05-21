@@ -1,0 +1,165 @@
+.container {
+    position: relative;
+    background: #ffffff
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: #000000;
+    line-height: 46px;
+    margin: 18px;
+    font-family: "Lato-Semibold", sans-serif;
+    font-weight: 600
+}
+
+.buttons button::after {
+    content: "";
+    position: absolute;
+    left: 35px;
+    bottom: -2px;
+    width: 112px;
+    height: 13px;
+    opacity: 0.3;
+}
+
+.buttons .buttons__red,
+.buttons .buttons__green,
+.buttons .buttons__big-red,
+.buttons .buttons__big {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px dashed #9747ff;
+    border-radius: 5px;
+    margin: 18px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Lato-Bold", sans-serif;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.buttons button:hover {
+    text-decoration: underline;
+    text-decoration-color: #9747ff
+}
+
+.buttons .buttons__red,
+.buttons .buttons__green,
+.buttons .buttons__big-red,
+.buttons .buttons__big {
+    width: 162px;
+    height: 108px;
+    margin-top: 25px;
+}
+
+.buttons .buttons__red .one,
+.buttons .buttons__green .one,
+.buttons .buttons__big-red .one,
+.buttons .buttons__big .one {
+    color: #f1897b
+}
+
+.buttons .buttons__red .one::after,
+.buttons .buttons__green .one::after,
+.buttons .buttons__big-red .one::after,
+.buttons .buttons__big .one::after {
+    background-color: #f1897b
+}
+
+.buttons .buttons__red .two,
+.buttons .buttons__green .two,
+.buttons .buttons__big-red .two,
+.buttons .buttons__big .two {
+    color: #e54f3a
+}
+
+.buttons .buttons__red .two::after,
+.buttons .buttons__green .two::after,
+.buttons .buttons__big-red .two::after,
+.buttons .buttons__big .two::after {
+    background-color: #e54f3a
+}
+
+.buttons .buttons__red .three,
+.buttons .buttons__green .three,
+.buttons .buttons__big-red .three,
+.buttons .buttons__big .three {
+    color: #53f3cd
+}
+
+.buttons .buttons__red .three::after,
+.buttons .buttons__green .three::after,
+.buttons .buttons__big-red .three::after,
+.buttons .buttons__big .three::after {
+    background-color: #53f3cd
+}
+
+.buttons .buttons__red .four,
+.buttons .buttons__green .four,
+.buttons .buttons__big-red .four,
+.buttons .buttons__big .four {
+    color: #02e0ab
+}
+
+.buttons .buttons__red .four::after,
+.buttons .buttons__green .four::after,
+.buttons .buttons__big-red .four::after,
+.buttons .buttons__big .four::after {
+    background-color: #02e0ab
+}
+
+.buttons .buttons__big-red,
+.buttons .buttons__big {
+    width: 340px;
+    height: 240px
+}
+
+.buttons .buttons__big-red button,
+.buttons .buttons__big button {
+    width: 300px;
+    height: 90px;
+    margin: 20px
+}
+
+.buttons .buttons__big-red .one,
+.buttons .buttons__big .one {
+    border: 1px dashed #9747ff
+}
+
+.buttons .buttons__big-red .two,
+.buttons .buttons__big .two {
+    border: 1px solid #E54F3A
+}
+
+.buttons .buttons__big-red .three,
+.buttons .buttons__big .three {
+    border: 1px solid #515773
+}
+
+.buttons .buttons__big-red .four,
+.buttons .buttons__big .four {
+    border: 1px solid #02E0AB
+}
+
+.buttons .buttons__big-red button::after,
+.buttons .buttons__big button::after {
+    left: 105px;
+    bottom: 25px
+}
